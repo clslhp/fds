@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil de Carlos Alberto Vieira Junior</title>
+  <style>
+    /* Cor de fundo */
+    body {
+      background-color: #dcdcdc; /* Cinza claro */
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    /* Título */
+    #titulo-principal {
+      font-family: 'Georgia', serif;
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+
+    /* Imagem de perfil */
+    #imagem-perfil {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+
+    /* Descrição */
+    #descricao {
+      font-size: 16px;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    /* Lista de hobbies */
+    #hobbies {
+      list-style-type: circle;
+      padding: 0;
+      margin-bottom: 15px;
+    }
+
+    #hobbies li {
+      font-size: 14px;
+      margin: 5px 0;
+    }
+
+    /* Link para rede social */
+    #link-rede-social {
+      text-decoration: none;
+      color: #2980b9;
+      font-weight: bold;
+    }
+
+    #link-rede-social:hover {
+      color: #1abc9c;
+    }
+
+    /* Botão dinâmico */
+    #botao-dinamico {
+      background-color: #1abc9c;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    #botao-dinamico:hover {
+      background-color: #16a085;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 id="titulo-principal">Carlos Alberto Vieira Junior</h1>
+  </header>
+  <main>
+    <section id="perfil">
+      <img src="eu.jpg" alt="Imagem de perfil" id="imagem-perfil">
+      <p id="descricao">
+        Sou Carlos, trabalho como analista de suporte técnico e DBA. Possuo também conhecimento em hardware e redes.
+      </p>
+      <ul id="hobbies">
+        <li>Jogos eletrônicos</li>
+        <li>Assistir séries</li>
+        <li>Viajar</li>
+      </ul>
+      <a href="https://www.linkedin.com/in/carlos-alberto-595b58121/" target="_blank" id="link-rede-social">Meu LinkedIn</a>
+    </section>
+    <button id="botao-dinamico">Clique aqui!</button>
+  </main>
+  <script>
+    // Ao clicar no botão, muda o texto do título principal
+    document.getElementById("botao-dinamico").addEventListener("click", function () {
+      const titulo = document.getElementById("titulo-principal");
+      titulo.textContent = "Obrigado por visitar o meu perfil!";
+      titulo.style.color = "#e74c3c";
+    });
+  </script>
+</body>
+</html>
